@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Point - Assignments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            cursor: pointer;
+            height:90px;
+        }
+        .nav-list{
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+        .nav-list li{
+            list-style: none;
+            padding: 26px 30px;
+        }
+        .nav-list li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-family: 'Ubuntu',sans-serif;
+        }
+        .nav-list li a:hover{
+            color: #45a049;
+        }
+        .rightnav{
+            width: 30%;
+            text-align: right;
+            margin: auto;
+        }
+        .logo{
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+        .logo img {
+            width: 85px;
+            height: 80px;
+            border-radius: 70px;
+            border: 2px solid white;
+            
+        }
+        .btn-sm {
+            padding: 5px 15px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #45a049;
+            color: #000;
+        }
+        .course-section {
+            text-align: center;
+            
+        }
+        .course-section h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 50px;
+            background: #4CAF50;
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+
+        }
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        .btn:hover {
+            background: white;
+            color: black;
+        }
+        .ass {
+            padding: 20px;
+            text-align: center;
+        }
+        iframe {
+            width: 70%;
+            height: 400px;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        iframe:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            background: #262626;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .social-icons i {
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .social-icons i:hover {
+            color: red;
+            transform: scale(1.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="image/logo.jpg" alt="logo"></div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="course.html">Course</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search" placeholder="Search...">
+            <button class="btn-sm">Search</button>
+        </div>
+    </nav>
+    <section class="course-section">
+        <h1>Assignments</h1>
+        <div class="ass">
+            <h2>HTML</h2>
+            <iframe src="assignment pdf/Assignments.pdf"></iframe>
+            <h2>CSS</h2>
+            <iframe src="assignment pdf/Assignments1.pdf"></iframe>
+            <h2>JavaScript</h2>
+            <iframe src="assignment pdf/Assignments2.pdf"></iframe>
+            <h2>Python</h2>
+            <iframe src="assignment pdf/Assignments3.pdf"></iframe>
+        </div>
+    </section>
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Follow us on social media</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-square-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.btn-sm').addEventListener('click', function() {
+            alert('Search functionality will be added soon!');
+        });
+    </script>
+</body>
+</html>
