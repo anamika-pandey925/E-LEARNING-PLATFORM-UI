@@ -44,5 +44,5 @@ Study Point is more than just a learning platform; it's a pathway to personal an
 
 
 
-##OUTPUT
+## OUTPUT
 ![Image](https://github.com/user-attachments/assets/7052b2b2-0cec-4dc3-80e4-ca937e6e9f04)
