@@ -13,7 +13,7 @@
 *MENTOR*: NEELA SANTOSH KUMAR
 
 
-**Study Point: Empowering the Future of Learning**
+## Study Point: Empowering the Future of Learning
 Study Point is an advanced, dynamic online learning platform designed to revolutionize how education is perceived and delivered. It offers a diverse selection of courses spanning various disciplines, including Mathematics, Science, English, and modern web technologies like HTML, CSS, JavaScript, Python, and Angular. Our goal is to create an inclusive and interactive environment where learners can thrive, acquire valuable skills, and receive certifications that validate their educational journey.
 
 At Study Point, education is not limited by geographical barriers. Whether you're a school student looking to strengthen your foundation in core subjects or an aspiring web developer aiming to master cutting-edge technologies, this platform is tailored to meet your unique learning needs. Each course is structured to promote progressive understanding, ensuring that learners grasp fundamental concepts before advancing to complex topics.
@@ -43,3 +43,6 @@ Community Engagement: Join forums and attend webinars to enhance your learning j
 Study Point is more than just a learning platform; it's a pathway to personal and professional growth. Join us today and take the first step towards a brighter, more knowledgeable future.
 
 
+
+##OUTPUT
+![Image](https://github.com/user-attachments/assets/7052b2b2-0cec-4dc3-80e4-ca937e6e9f04)
