@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Point - Learn & Grow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" type="text/css">
+    <style>
+        body {
+            background: rgba(0,0,0,0.7) url('image/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-blend-mode: darken;
+            color: #fff;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            cursor: pointer;
+            height:90px;
+        }
+        .nav-list{
+            width: 70%;
+            display: flex;
+            align-items: center;
+        } 
+        .main-video{
+            margin:30px 60px;
+        }
+        .nav-list li{
+            list-style: none;
+            padding: 26px 30px;
+        }
+        .nav-list li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: 'Ubuntu',sans-serif;
+        }
+        .nav-list li a:hover{
+            color: #45a049;
+        }      
+        .rightnav{
+            width: 30%;
+            text-align: right;
+            margin: auto;
+        }
+       .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 20px;
+            margin: 20px 5px;
+        }
+        .logo img{
+            border-radius: 70px;
+            border: 2px solid white;
+        }
+        .btn-sm {
+            padding: 5px 15px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #45a049;
+            color: #000;
+        }
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .text-content, .image-content {
+            flex: 1 1 500px;
+            padding: 20px;
+        }
+        
+        .text-big {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .text-small {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .buttons .btn {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background: none;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+        }
+        .buttons .btn:hover {
+            background: white;
+            color: black;
+        }
+        .image-content img {
+            width: 50%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 70px;
+            border: 2px solid white;
+        }
+        .image-content img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .section-Left{
+            flex-direction: row-reverse;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            animation: fadeIn 2s ease-in-out;
+            background-color: white;
+        } 
+        .paras{
+            padding: 0px 65px;
+            color: #000;
+        }
+        .sectionSubTag{
+            font-family:'Times New Roman', Times, serif;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px;
+            animation: fadeIn 2s ease-
+        }
+        .thumbnail img{
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 70px;
+            border: 2px solid white;
+        }
+       .ass{
+           padding: 50px;
+           margin-left: 250px;
+        }
+        .footer {
+            background: #262626;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .social-icons i {
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, color 0.3s;
+        }
+        .social-icons i:hover {
+            color: red;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="image/logo.jpg" alt="logo" width="85" height="80"></div>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignment.html">Assignment</a></li>
+            <li><a href="course.html">Course</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" id="search" placeholder="Search">
+            <button class="btn-sm">Search</button>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="text-content">
+            <h1 class="text-big">The Future of Education is Here</h1>
+            <p class="text-small">Study Point is an online platform offering diverse courses like Mathematics, Science, and modern web technologies including HTML, CSS, JavaScript, and Python. Empower your learning with our certification courses.</p>
+            <div class="buttons">
+                <button class="btn" id="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+        <div class="image-content">
+            <img src="image/book.jpg" alt="Educational Material">
+        </div>
+    </section>
+    <section class="section-Left">
+        <div class="paras">
+       <p class="sectionSubTag text-small">Study Point is Online Platform. This Platform Provide All Subject like Mathmathics, Science, Eglish other Subject and any Class.
+        It is also Provide Prepartion for Competitive exam.  HTMl, CSS,JavaScrit, Angular, Python and All, this course validation with certificate and how to creat web 
+        site too you will learn to this Platform. </p>
+         </div> 
+           <div class="thumbnail">
+               <img src="image/code.jpg" alt="book" class="imgFluid">
+           </div>
+   </section>
+
+    <footer class="footer">
+        <h2>Contact Us</h2>
+        <p>Follow us on social media</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-square-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('subscribeBtn').addEventListener('click', function() {
+            alert('Thank you for subscribing!');
+        });
+    </script>
+    
+    <script>
+        document.querySelectorAll('.social-icons i').forEach(icon => {
+            icon.addEventListener('click', () => {
+                console.log(`${icon.classList[1]} icon clicked`);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
