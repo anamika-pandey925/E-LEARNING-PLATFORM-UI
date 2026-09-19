@@ -1,9 +1,9 @@
 {
-  "name": "temp-vite",
+  "name": "study-point-elearning",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://anamika-pandey925.github.io/E-LEARNING-PLATFORM-UI/",
+  "homepage": "https://studypoint-elearning.vercel.app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

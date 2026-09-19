@@ -57,7 +57,7 @@ const seedDatabase = async () => {
       email: 'admin@studypoint.com',
       password: 'password123',
       role: 'admin',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80',
+      avatar: '/studypoint-avatar.png',
       bio: 'Head Administrator of Study Point Platform.',
     });
 

@@ -30,9 +30,11 @@ const Footer = () => {
         {/* Brand & Brief */}
         <div className="space-y-4 sm:col-span-2 lg:col-span-1">
           <div className="flex items-center space-x-3 text-slate-100">
-            <div className="w-9 h-9 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 shadow-md shadow-emerald-500/10 shrink-0">
-              <FiBookOpen size={20} className="stroke-[2.5]" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="Study Point Logo"
+              className="w-10 h-10 rounded-xl object-contain shadow-md shadow-emerald-500/10 shrink-0 border border-emerald-500/30"
+            />
             <span className="font-poppins font-extrabold text-lg tracking-tight bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">
               Study Point
             </span>

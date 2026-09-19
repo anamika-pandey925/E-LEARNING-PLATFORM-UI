@@ -55,11 +55,13 @@ const Navbar = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center space-x-2.5 sm:space-x-3 text-slate-100 focus:outline-none shrink-0"
+            className="flex items-center space-x-2.5 sm:space-x-3 text-slate-100 focus:outline-none shrink-0 group"
           >
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-slate-950 shadow-lg shadow-emerald-500/20 shrink-0">
-              <FiBookOpen size={20} className="stroke-[2.5]" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="Study Point Logo"
+              className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl object-contain shadow-lg shadow-emerald-500/20 shrink-0 border border-emerald-500/30 group-hover:scale-105 transition-transform"
+            />
             <div className="flex flex-col text-left">
               <span className="font-poppins font-extrabold text-lg sm:text-xl tracking-tight bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">
                 Study Point
