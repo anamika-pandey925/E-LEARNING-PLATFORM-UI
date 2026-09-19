@@ -11,7 +11,7 @@ const Button = ({
   className = '',
   disabled = false
 }) => {
-  const baseStyle = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 disabled:opacity-50 disabled:pointer-events-none px-6 py-2.5 text-sm md:text-base';
+  const baseStyle = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 disabled:opacity-50 disabled:pointer-events-none px-5 sm:px-6 py-2.5 text-xs sm:text-sm md:text-base select-none touch-manipulation';
   
   const variants = {
     primary: 'bg-emerald-500 hover:bg-emerald-600 text-slate-950 hover:shadow-lg hover:shadow-emerald-500/20 active:scale-95 transform',
@@ -23,8 +23,9 @@ const Button = ({
   const combinedStyle = `${baseStyle} ${variants[variant]} ${className}`;
 
   if (to) {
+    const isFullWidth = className.includes('w-full');
     return (
-      <motion.span whileTap={{ scale: 0.98 }}>
+      <motion.span whileTap={{ scale: 0.98 }} className={isFullWidth ? 'w-full block' : 'inline-block'}>
         <Link to={to} className={combinedStyle}>
           {children}
         </Link>

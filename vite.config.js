@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/E-LEARNING-PLATFORM-UI/',
+  base: process.env.VITE_BASE || '/',
 })

@@ -35,10 +35,10 @@ const BackToTop = () => {
           exit={{ opacity: 0, scale: 0.5 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="fixed bottom-6 right-6 z-50 p-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 rounded-full shadow-lg hover:shadow-emerald-500/20 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 p-2.5 sm:p-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 rounded-full shadow-lg hover:shadow-emerald-500/20 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/50"
           aria-label="Back to Top"
         >
-          <FiArrowUp size={20} className="stroke-[3]" />
+          <FiArrowUp size={18} className="stroke-[3] sm:w-5 sm:h-5" />
         </motion.button>
       )}
     </AnimatePresence>

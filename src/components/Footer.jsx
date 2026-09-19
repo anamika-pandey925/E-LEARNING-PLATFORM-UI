@@ -24,13 +24,13 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-slate-950 border-t border-slate-900 pt-16 pb-8 text-slate-400">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+    <footer className="bg-slate-950 border-t border-slate-900 pt-12 sm:pt-16 pb-8 text-slate-400">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 sm:mb-16">
         
         {/* Brand & Brief */}
-        <div className="space-y-4 md:col-span-1">
+        <div className="space-y-4 sm:col-span-2 lg:col-span-1">
           <div className="flex items-center space-x-3 text-slate-100">
-            <div className="w-9 h-9 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 shadow-md shadow-emerald-500/10">
+            <div className="w-9 h-9 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950 shadow-md shadow-emerald-500/10 shrink-0">
               <FiBookOpen size={20} className="stroke-[2.5]" />
             </div>
             <span className="font-poppins font-extrabold text-lg tracking-tight bg-gradient-to-r from-emerald-400 to-teal-200 bg-clip-text text-transparent">
@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Subscription */}
-        <div className="space-y-4">
+        <div className="space-y-4 sm:col-span-2 lg:col-span-1">
           <h3 className="text-slate-100 font-semibold tracking-wider uppercase text-sm">Newsletter</h3>
           <p className="text-sm text-slate-400">Subscribe to get course updates, tech news, and certificates notifications.</p>
           <form onSubmit={handleSubscribe} className="relative flex items-center">
@@ -109,19 +109,18 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900/60 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-900/60 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4 sm:gap-0 text-center sm:text-left">
         <div>
           <p>© {new Date().getFullYear()} Study Point. All rights reserved. Empowering future learning.</p>
         </div>
         
-        {/* Social Icons - disabled/re-linked based on rule 12 */}
-        <div className="flex items-center space-x-6 mt-4 md:mt-0">
+        {/* Social Icons */}
+        <div className="flex items-center space-x-6 mt-2 sm:mt-0 flex-wrap justify-center">
           {socialLinks.map((item, idx) => (
             <a
               key={idx}
               href={item.url}
               onClick={(e) => {
-                // Disable if fake (Rule 12: remove link or disable)
                 if (item.url.endsWith('#')) {
                   e.preventDefault();
                   alert('Social links will be available soon.');
@@ -129,7 +128,7 @@ const Footer = () => {
               }}
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-slate-400 ${item.color} transition-all duration-300 transform hover:scale-110`}
+              className={`text-slate-400 ${item.color} transition-all duration-300 transform hover:scale-110 p-1`}
               aria-label={item.label}
             >
               {item.icon}
